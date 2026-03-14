@@ -1,35 +1,42 @@
-# Numerical Methods with Python
+# Numerical Methods in Python
 
-Example result: convergence of the power method
+Implementation and analysis of classical algorithms from **numerical linear algebra** and **scientific computing** using Python.
 
-![Power method convergence](images/power_method_convergence.png)
-
-## Overview
-
-This repository contains a collection of **Jupyter notebooks implementing classical algorithms from numerical linear algebra and scientific computing**.
-
-The project focuses on studying **efficient numerical algorithms**, comparing different computational approaches, and analyzing their:
+The project focuses on the implementation, comparison, and analysis of numerical algorithms with respect to:
 
 * runtime behaviour
 * numerical stability
 * convergence properties
 
-All experiments are implemented in **Python** using the scientific computing ecosystem:
+<p align="center">
+  <img src="images/power_method_convergence.png" width="600">
+</p>
+
+---
+
+## Overview
+
+This repository contains a collection of **Jupyter notebooks implementing classical algorithms from numerical linear algebra and scientific computing**.
+
+The experiments are implemented in **Python** using the scientific computing ecosystem:
 
 * **NumPy**
 * **SciPy**
 * **Matplotlib**
 * **Jupyter Notebook**
 
-The repository serves as both a **learning project** and a **demonstration of numerical algorithm implementations**.
+The repository serves both as:
+
+* a **learning project for numerical algorithms**
+* a **demonstration of numerical method implementations and analysis**
 
 ---
 
-# Topics Covered
+## Topics Covered
 
 The repository includes implementations and experiments for several fundamental numerical methods.
 
-## 1. Tridiagonal Linear Systems
+### 1. Tridiagonal Linear Systems
 
 * Implementation of the **Thomas algorithm**
 * Comparison with **dense linear solvers**
@@ -38,7 +45,7 @@ The repository includes implementations and experiments for several fundamental 
 
 ---
 
-## 2. Iterative Methods
+### 2. Iterative Methods
 
 * **Jacobi method**
 * **Gauss–Seidel method**
@@ -47,7 +54,7 @@ The repository includes implementations and experiments for several fundamental 
 
 ---
 
-## 3. Least Squares Problems
+### 3. Least Squares Problems
 
 * Solving least squares via **normal equations**
 * Solving least squares via **QR decomposition**
@@ -55,7 +62,7 @@ The repository includes implementations and experiments for several fundamental 
 
 ---
 
-## 4. Polynomial Interpolation
+### 4. Polynomial Interpolation
 
 * **Lagrange interpolation**
 * **Newton interpolation**
@@ -64,7 +71,7 @@ The repository includes implementations and experiments for several fundamental 
 
 ---
 
-## 5. Eigenvalue Computation
+### 5. Eigenvalue Computation
 
 * **Power method**
 * **Rayleigh quotient**
@@ -72,9 +79,9 @@ The repository includes implementations and experiments for several fundamental 
 
 ---
 
-# Example Results
+## Example Results
 
-## Tridiagonal Linear Systems
+### Tridiagonal Linear Systems
 
 Runtime comparison between the **Thomas algorithm** and general-purpose solvers.
 
@@ -82,7 +89,7 @@ Runtime comparison between the **Thomas algorithm** and general-purpose solvers.
 
 ---
 
-## Iterative Methods
+### Iterative Methods
 
 Convergence comparison of **Jacobi** and **Gauss–Seidel** methods.
 
@@ -90,7 +97,7 @@ Convergence comparison of **Jacobi** and **Gauss–Seidel** methods.
 
 ---
 
-## Least Squares
+### Least Squares
 
 Stability comparison between solving least squares problems via:
 
@@ -101,7 +108,7 @@ Stability comparison between solving least squares problems via:
 
 ---
 
-## Polynomial Interpolation
+### Polynomial Interpolation
 
 Comparison of polynomial interpolation using:
 
@@ -112,7 +119,7 @@ Comparison of polynomial interpolation using:
 
 ---
 
-## Eigenvalue Computation
+### Eigenvalue Computation
 
 Convergence behaviour of the **power method** when approximating dominant eigenvalues.
 
@@ -120,9 +127,9 @@ Convergence behaviour of the **power method** when approximating dominant eigenv
 
 ---
 
-# Repository Structure
+## Repository Structure
 
-```
+```text
 numerical-methods-python
 │
 ├── notebooks
@@ -145,9 +152,16 @@ numerical-methods-python
 
 ---
 
-# Installation
+## Installation
 
-To run the notebooks locally, install the required Python packages:
+Clone the repository:
+
+```bash
+git clone https://github.com/jan-momberg/numerical-methods-python.git
+cd numerical-methods-python
+```
+
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
@@ -155,32 +169,47 @@ pip install -r requirements.txt
 
 ---
 
-# Requirements
+## Usage
+
+Start Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Then open the notebooks in the **`notebooks`** directory to explore the numerical experiments and visualizations.
+
+---
+
+## Requirements
 
 The project uses the following Python libraries:
 
-* **NumPy**
-* **SciPy**
-* **Matplotlib**
-* **Jupyter Notebook**
+* NumPy
+* SciPy
+* Matplotlib
+* Jupyter Notebook
 
 ---
 
-# Learning Goals
+## Learning Goals
 
 This project demonstrates:
 
-* implementation of **classical numerical algorithms**
-* comparison of **different numerical approaches**
-* analysis of **runtime complexity**
-* investigation of **numerical stability**
-* visualization of **algorithm convergence**
+* implementation of classical numerical algorithms
+* comparison of different numerical methods
+* analysis of runtime behaviour
+* investigation of numerical stability
+* visualization of convergence behaviour
 
-The repository supports understanding of **core techniques used in scientific computing and numerical linear algebra**.
+The repository illustrates fundamental techniques used in **scientific computing and numerical linear algebra**.
 
 ---
 
-# Author
+## Author
 
-**Jan Momberg**
+Jan Momberg
+
+GitHub:
+https://github.com/jan-momberg
 
