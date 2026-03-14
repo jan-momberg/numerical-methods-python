@@ -2,132 +2,170 @@
 
 Implementation and analysis of classical algorithms from **numerical linear algebra** and **scientific computing** using Python.
 
-The project focuses on the implementation, comparison, and analysis of numerical algorithms with respect to:
+The project focuses on **runtime analysis**, **numerical stability**, and **convergence behaviour** of fundamental numerical algorithms.
 
-* runtime behaviour
-* numerical stability
-* convergence properties
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-orange)
+![SciPy](https://img.shields.io/badge/SciPy-Linear_Algebra-green)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626)
+
+---
+
+## Example Result
 
 <p align="center">
   <img src="images/power_method_convergence.png" width="600">
 </p>
 
----
-
-## Overview
-
-This repository contains a collection of **Jupyter notebooks implementing classical algorithms from numerical linear algebra and scientific computing**.
-
-The experiments are implemented in **Python** using the scientific computing ecosystem:
-
-* **NumPy**
-* **SciPy**
-* **Matplotlib**
-* **Jupyter Notebook**
-
-The repository serves both as:
-
-* a **learning project for numerical algorithms**
-* a **demonstration of numerical method implementations and analysis**
+Example: convergence behaviour of the **Power Method** when approximating the dominant eigenvalue.
 
 ---
 
-## Topics Covered
+# Overview
 
-The repository includes implementations and experiments for several fundamental numerical methods.
+This repository contains a collection of **Jupyter notebooks implementing classical numerical algorithms**.
 
-### 1. Tridiagonal Linear Systems
+The experiments analyze:
 
-* Implementation of the **Thomas algorithm**
-* Comparison with **dense linear solvers**
-* Comparison with **sparse solvers**
-* Runtime benchmarking
+* algorithmic **runtime behaviour**
+* **numerical stability**
+* **convergence properties**
 
----
+The implementations are written in **Python** using the scientific computing ecosystem:
 
-### 2. Iterative Methods
+* NumPy
+* SciPy
+* Matplotlib
+* Jupyter Notebook
 
-* **Jacobi method**
-* **Gauss–Seidel method**
-* Convergence analysis
-* Performance comparison
-
----
-
-### 3. Least Squares Problems
-
-* Solving least squares via **normal equations**
-* Solving least squares via **QR decomposition**
-* Analysis of **numerical stability**
+The project serves as both a **learning resource** and a **demonstration of numerical algorithm implementations**.
 
 ---
 
-### 4. Polynomial Interpolation
+# Topics Covered
 
-* **Lagrange interpolation**
-* **Newton interpolation**
-* Comparison of **equidistant nodes vs. Chebyshev nodes**
-* Visualization of interpolation behaviour
+## Tridiagonal Linear Systems
 
----
-
-### 5. Eigenvalue Computation
-
-* **Power method**
-* **Rayleigh quotient**
-* Analysis of convergence behaviour for dominant eigenvalues
+* Thomas algorithm
+* comparison with dense linear solvers
+* comparison with sparse solvers
+* runtime benchmarking
 
 ---
 
-## Example Results
+## Iterative Methods
 
-### Tridiagonal Linear Systems
+* Jacobi method
+* Gauss–Seidel method
+* convergence analysis
+* performance comparison
 
-Runtime comparison between the **Thomas algorithm** and general-purpose solvers.
+---
+
+## Least Squares Problems
+
+* solution via normal equations
+* solution via QR decomposition
+* analysis of numerical stability
+
+---
+
+## Polynomial Interpolation
+
+* Lagrange interpolation
+* Newton interpolation
+* comparison of equidistant nodes vs Chebyshev nodes
+* visualization of interpolation behaviour
+
+---
+
+## Eigenvalue Computation
+
+* Power method
+* Rayleigh quotient
+* convergence analysis for dominant eigenvalues
+
+---
+
+# Notebook Overview
+
+## Tridiagonal Linear Systems
+
+Implementation of the **Thomas algorithm** and comparison with dense and sparse solvers.
+
+Notebook:
+
+```
+notebooks/01_tridiagonal_systems.ipynb
+```
 
 ![Runtime comparison](images/tridiagonal_runtime_comparison.png)
 
 ---
 
-### Iterative Methods
+## Iterative Methods
 
-Convergence comparison of **Jacobi** and **Gauss–Seidel** methods.
+Comparison of **Jacobi** and **Gauss–Seidel** methods and analysis of convergence behaviour.
 
-![Iterative methods convergence](images/iterative_methods_convergence.png)
+Notebook:
+
+```
+notebooks/02_iterative_methods.ipynb
+```
+
+![Iterative convergence](images/iterative_methods_convergence.png)
 
 ---
 
-### Least Squares
+## Least Squares Problems
 
-Stability comparison between solving least squares problems via:
+Stability comparison between solving least squares problems using:
 
-* **normal equations**
-* **QR decomposition**
+* normal equations
+* QR decomposition
+
+Notebook:
+
+```
+notebooks/03_least_squares.ipynb
+```
 
 ![Least squares stability](images/least_squares_stability.png)
 
 ---
 
-### Polynomial Interpolation
+## Polynomial Interpolation
 
-Comparison of polynomial interpolation using:
+Comparison between interpolation with:
 
-* **equidistant nodes**
-* **Chebyshev nodes**
+* equidistant nodes
+* Chebyshev nodes
+
+Notebook:
+
+```
+notebooks/04_polynomial_interpolation.ipynb
+```
 
 ![Polynomial interpolation](images/polynomial_interpolation_comparison.png)
 
 ---
 
-### Eigenvalue Computation
+## Eigenvalue Computation
 
-Convergence behaviour of the **power method** when approximating dominant eigenvalues.
+Investigation of the convergence behaviour of the **Power Method**.
+
+Notebook:
+
+```
+notebooks/05_eigenvalues.ipynb
+```
 
 ![Power method convergence](images/power_method_convergence.png)
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```text
 numerical-methods-python
@@ -152,16 +190,9 @@ numerical-methods-python
 
 ---
 
-## Installation
+# Installation
 
-Clone the repository:
-
-```bash
-git clone https://github.com/jan-momberg/numerical-methods-python.git
-cd numerical-methods-python
-```
-
-Install the required packages:
+Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
@@ -169,7 +200,7 @@ pip install -r requirements.txt
 
 ---
 
-## Usage
+# Usage
 
 Start Jupyter Notebook:
 
@@ -177,39 +208,32 @@ Start Jupyter Notebook:
 jupyter notebook
 ```
 
-Then open the notebooks in the **`notebooks`** directory to explore the numerical experiments and visualizations.
+Open the notebooks in the **notebooks** directory to explore the experiments.
 
 ---
 
-## Requirements
-
-The project uses the following Python libraries:
-
-* NumPy
-* SciPy
-* Matplotlib
-* Jupyter Notebook
-
----
-
-## Learning Goals
+# Learning Goals
 
 This project demonstrates:
 
 * implementation of classical numerical algorithms
 * comparison of different numerical methods
-* analysis of runtime behaviour
+* analysis of runtime complexity
 * investigation of numerical stability
-* visualization of convergence behaviour
+* visualization of algorithm convergence
 
-The repository illustrates fundamental techniques used in **scientific computing and numerical linear algebra**.
+The repository illustrates fundamental techniques used in:
+
+* **scientific computing**
+* **numerical linear algebra**
+* **data science**
+* **machine learning**
 
 ---
 
-## Author
+# Author
 
-Jan Momberg
+**Jan Momberg**
 
-GitHub:
-https://github.com/jan-momberg
+GitHub: https://github.com/jan-momberg
 
